@@ -1,0 +1,7 @@
+{
+  "name": "local-goal-autopilot-v3",
+  "private": true,
+  "version": "3.1.0",
+  "type": "module",
+  "main": "./index.js"
+}

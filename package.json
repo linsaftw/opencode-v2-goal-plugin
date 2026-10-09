@@ -1,0 +1,23 @@
+{
+  "name": "opencode-v2-goal-plugin",
+  "version": "3.1.0",
+  "private": true,
+  "description": "Persistent, uncapped autonomous goal execution for OpenCode 2",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linsaftw/opencode-v2-goal-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linsaftw/opencode-v2-goal-plugin/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check plugin/index.js && node --check tests/goal.test.mjs && node --check tests/install.test.mjs",
+    "ci": "npm run check && npm test"
+  }
+}

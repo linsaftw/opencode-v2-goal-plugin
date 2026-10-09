@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible problem with /goal
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: OpenCode version
+      description: Run opencode2 --version or opencode --version.
+      placeholder: 2.x.y
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and runtime
+      placeholder: Kubuntu 26.xx / OpenCode CLI / provider and model
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the /goal command and actual steps, without secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and redacted logs
+      description: Remove credentials, private source code, and personal data.
+    validations:
+      required: true

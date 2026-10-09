@@ -1,0 +1,16 @@
+# Dependencies and local development
+node_modules/
+.npm/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+
+# Do not commit local OpenCode/session data
+.opencode/goals/
+.opencode-goal/
+.goal-autopilot-state/
+*.tmp
+.env
+.env.*
+!.env.example
